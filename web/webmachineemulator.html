@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Machine Emulator</title>
+    <link rel="stylesheet" href="webmachineemulator.css">
+  </head>
+  <body>
+    <h1>Simple Machine Emulator</h1>
+    
+    <p>Emulates the simple machine found in Appendix C of Computer Science: An Overview by J. Glenn Brookshear</p>
+    
+    <div id="editor_container">
+      <div id="widget_container">
+        <Button id="start_button">Start</Button>
+        <Button id="clear_button">Clear</Button>
+        <input type="text" id="input_field" />
+        <Button id="input_byte_button" >Input By Byte</Button>
+        <Button id="input_word_button" >Input By Word</Button>
+      </div>
+      <div id="error"></div>
+      <div class="clear"></div>
+      <div id="table_container"></div>
+    </div>
+    <div id="simulator_container">
+      <div id="widget_container">
+        <button id="stopButton">Stop Emulation</button>
+        <Button id="playButton">Play</Button>
+        <Button id="pauseButton">Pause</Button>
+        <input type="text" id="frequencyField" />
+        <Button id="frequencyButton">Set Frequency</Button>
+      </div>
+      Main Memory:
+      <div id="memory_container"></div>
+      Registers:
+      <div id="register_container"></div>
+      <b>Special Registers:</b> PC: <input type="text" disabled /> IR: <input type="text" disabled />
+    </div>
+
+    <script type="application/dart" src="webmachineemulator.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

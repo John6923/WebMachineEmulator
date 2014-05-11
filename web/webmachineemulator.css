@@ -1,0 +1,61 @@
+
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 10px;
+}
+
+h1, p {
+  color: #333;
+}
+
+#editor_container {
+  width: 100%;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding-right: 4px; 
+  margin-bottom: 15px;
+}
+
+#simulator_container {
+  width: 100%;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding-right: 4px; 
+  margin-bottom: 15px;
+}
+
+#widget_container {
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  margin: 2px;
+  width: 100%;
+}
+
+.byteInput {
+  width: 100%;
+}
+
+.editorCell {
+  padding-left: 2px;
+  padding-right: 2px; 
+}
+
+.simulatorCell {
+  padding-left: 2px;
+  padding-right: 2px; 
+}
+
+.registerCell {
+  padding-left: 2px;
+  padding-right: 2px; 
+}
+
+#error {
+  color: red;
+}
