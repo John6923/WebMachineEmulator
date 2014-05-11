@@ -68,6 +68,9 @@ void onStartButton(Event e) {
    if(wasError){
      querySelector("#error").text = 'Format errors exist in following bytes: ${errorCells.toString()}';
    }
+   else {
+     querySelector("#error").text = '';
+   }
    main_memory.add(value);
  }
  //TODO: finish
